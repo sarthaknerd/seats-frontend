@@ -1,0 +1,150 @@
+.bus {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align seats more left than right */
+    list-style-type: none;
+    margin-top: 2em;
+    border: 1px solid #ccc; /* Add border to the seating area */
+    padding-right:2em;
+    padding-top:2em;
+    padding-bottom:2em;
+    height: fit-content;
+    width: fit-content; /* Adjust the width to fit the content */
+    margin-left: auto; /* Align the seating area to the center */
+    margin-right: auto;
+  }
+  
+  
+  .bus_seat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .seats {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .seat {
+    
+    width: 4em;
+    height: 4em;
+    border: 1px solid #ccc;
+    margin: 0.5em;
+    position: relative;
+    text-align: center; /* Added style for center-aligning seat numbers */
+  }
+  
+  
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  input[type="checkbox"]:checked+label {
+    background-color: #6dc62a;
+    color: #fff;
+  }
+  
+  .aisle {
+    height: 1em;
+  }
+  
+  .available {
+    background-color: #fff;
+  }
+  
+  .booked {
+    background-color: #ccc;
+  }
+  
+  .selected {
+    background-color: #6dc62a;
+    color: #fff;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1em;
+    font-size: 16px;
+  }
+  
+  .info p {
+    margin: 0;
+  }
+  
+  input[type="submit"] {
+    display: block; /* Change display property to block to center align */
+     /* Set margin to auto to center horizontally */
+    margin: auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1em;
+    font-size: 16px;
+  }
+  
+  .info p {
+    margin:auto;
+  }
+  
+  .info span {
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+  }
+  
+  #available-seats {
+    background-color: #6dc62a;
+    color: #fff;
+  }
+  
+  #booked-seats {
+    background-color: #ccc;
+    color: #000;
+  }
+  
+  #selected-seats {
+    background-color: #ffcc00;
+    color: #000;
+  }
+  .driver-seat {
+    margin-left: auto;
+    
+    
+  }
+  
